@@ -1,0 +1,126 @@
+.envio-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.envio-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.envio-cta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.envio-cta .btn:hover {
+  background-color: var(--accent-color);
+}
+
+.envio-pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 60px auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+
+.envio-pasos .paso {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.envio-pasos i {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.envio-pasos h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.envio-pasos p {
+  font-size: 14px;
+  color: #555;
+}
+
+.envio-beneficios {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.envio-tarifas,
+.envio-solicitud {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.solicitud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1 1 300px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.envio-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.envio-hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.envio-hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}

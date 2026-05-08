@@ -1,0 +1,330 @@
+/* Paleta de Colores Proporcionada */
+:root {
+  --primary: #2E4B67; /* Azul oscuro/grisáceo para botones, texto principal */
+  --accent: #5B84B1;  /* Azul más claro para links y detalles */
+  --text: #222;       /* Texto oscuro */
+  --light: #fff;      /* Fondo blanco */
+  --muted: #7a7a7a;   /* Texto gris secundario */
+  --card-bg: rgba(255, 255, 255, 0.85); /* Fondo de tarjeta semitransparente (derecha) */
+  --blue-night: #1F3044; /* Azul Noche solicitado para el fondo del logo */
+}
+
+/* Estilos Globales y Reseteo Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light);
+    color: var(--text);
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* --- Panel Izquierdo (Marca y Bienvenida) --- */
+.left-panel {
+    flex: 1; 
+    position: relative;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+    /* Fondo con imagen y overlay para el color y el desenfoque */
+    background: 
+        linear-gradient(135deg, rgba(46, 75, 103, 0.8), rgba(91, 132, 177, 0.6)), /* Overlay usando Primary/Accent */
+        url('https://via.placeholder.com/800x1200/5070A0/ffffff?text=Fondo+Muebles') center center / cover; /* Placeholder de imagen */
+    
+    /* Ajustes para el efecto visual de la imagen (silla borrosa) */
+    background-blend-mode: multiply; /* Para mezclar colores */
+}
+
+.brand-content {
+    text-align: center;
+    z-index: 10;
+}
+
+/* Contenedor del Logo y Texto "Muebly" */
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    /* Fondo Azul Noche (Sólido) como solicitado */
+    background-color: var(--blue-night); 
+}
+
+.logo-icon {
+    font-size: 3rem;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.welcome-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    max-width: 350px;
+}
+
+/* Iconos Decorativos */
+.decorative-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5); 
+    z-index: 5;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente para los iconos */
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+.middle-right {
+    top: 50%;
+    right: 30px;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.bottom-left {
+    bottom: 40px;
+    left: 40px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+}
+
+
+/* --- Panel Derecho (Formulario) --- */
+.right-panel {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: var(--light);
+}
+
+.login-form-card {
+    max-width: 420px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: var(--card-bg); /* Fondo semitransparente según la paleta */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borde muy sutil */
+}
+
+.client-area-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary); /* Usando el color primary */
+    color: var(--light);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.client-area-badge i {
+    margin-right: 8px;
+}
+
+.right-panel h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-instruction {
+    color: var(--muted);
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* --- Formulario --- */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 45px; 
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: var(--muted);
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+    accent-color: var(--accent);
+}
+
+.forgot-password {
+    color: var(--accent); /* Usando el color accent */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary); /* Usando el color primary */
+    color: var(--light);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: var(--accent);
+}
+
+.register-prompt {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.register-link {
+    color: var(--accent); /* Usando el color accent */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- Badges de Información (Debajo del formulario) --- */
+.info-badges {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 35px;
+}
+
+.badge {
+    flex: 1;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    background-color: var(--light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.badge i {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--primary); /* Usando el color primary */
+}
+
+/* Nota SSL */
+.ssl-note {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.ssl-note i {
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+/* --- Media Queries para responsividad --- */
+@media (max-width: 900px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        min-height: 300px; 
+    }
+
+    .right-panel {
+        padding: 40px 20px;
+    }
+
+    .info-badges {
+        flex-direction: column;
+        max-width: 350px;
+    }
+}

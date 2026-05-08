@@ -1,0 +1,291 @@
+/* =========================================================
+   PALETA DE COLORES
+========================================================= */
+:root {
+    --dark-blue: #2E4B67; 
+    --avatar-blue: #5B84B1;
+    --white: #fff;
+    --text-dark: #222;
+    --text-muted: #7a7a7a;
+    --background-light: #f7f7f7;
+    --card-bg: #fff;
+    --border-color: #eee;
+
+    --icon-blue: #5B84B1;
+    --icon-green: #4CAF50; 
+    --icon-purple: #9C27B0;
+    --icon-orange: #FF9800;
+}
+
+/* =========================================================
+   RESETEO BÁSICO
+========================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   BARRA PRINCIPAL DEL PERFIL
+========================================================= */
+.profile-intro-bar {
+    background-color: var(--dark-blue);
+    padding: 20px 5%;
+    color: var(--white);
+}
+
+.back-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.back-link i {
+    margin-right: 8px;
+}
+
+.user-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--avatar-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.user-details h1 {
+    font-size: 1.5rem;
+}
+
+.user-details p {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+/* =========================================================
+   BOTONES — SISTEMA OPTIMIZADO
+========================================================= */
+
+/* Clase base para todos los botones */
+.profile-btn {
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Editar */
+.edit-button {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.edit-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Cerrar sesión */
+.logout-button {
+    background-color: #d9534f;
+    border: none;
+    color: var(--white);
+}
+.logout-button:hover { opacity: 0.9; }
+
+/* Ver Carrito (nuevo) */
+.cart-button {
+    background-color: var(--avatar-blue);
+    border: none;
+    color: var(--white);
+}
+.cart-button:hover { opacity: 0.9; }
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+.profile-content {
+    flex-grow: 1; 
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   INFORMACIÓN PERSONAL
+========================================================= */
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-light);
+    padding: 15px 20px;
+    border-radius: 6px;
+}
+
+.info-icon {
+    font-size: 1.2rem;
+    color: var(--avatar-blue);
+    margin-right: 15px;
+    min-width: 20px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.label { display: none; }
+
+.value {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Mostrar labels solo en Teléfono y Dirección */
+.info-item:nth-child(3) .label,
+.info-item:nth-child(4) .label {
+    display: block;
+}
+
+/* =========================================================
+   ESTADÍSTICAS
+========================================================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    text-align: center;
+    background-color: var(--card-bg); 
+    padding: 20px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.icon-blue    { background-color: var(--icon-blue); }
+.icon-green   { background-color: var(--icon-green); }
+.icon-purple  { background-color: var(--icon-purple); }
+.icon-orange  { background-color: var(--icon-orange); }
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.profile-footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* =========================================================
+   RESPONSIVIDAD
+========================================================= */
+@media (max-width: 992px) {
+    .profile-intro-bar,
+    .profile-content {
+        padding: 20px 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .user-info-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .profile-btn {
+        width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}

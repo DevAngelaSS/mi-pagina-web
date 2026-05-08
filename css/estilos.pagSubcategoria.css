@@ -1,0 +1,250 @@
+:root {
+  --primary-color: #2e4b67;
+  --accent-color: #5ea1d6;
+  --gray-light: #f6f7f9;
+  --border-color: #e3e3e3;
+  --text-dark: #222;
+  --text-light: #fff;
+}
+
+/* Banner */
+.subcat-banner {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 70px 20px;
+}
+.subcat-banner h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+.subcat-banner p {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* Layout general */
+.products-layout {
+  display: flex;
+  gap: 30px;
+  padding: 50px 20px 70px;
+}
+
+/* --- Barra Lateral de Filtros (ASIDE) --- */
+.sidebar-filters {
+    width: 250px; /* Ancho más estrecho */
+    flex-shrink: 0; 
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky; 
+    top: 20px; 
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: var(--primary-color);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 10px;
+}
+
+.checkbox-list, .radio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-list label, .radio-list label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-list input[type="checkbox"], 
+.radio-list input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--primary-color);
+}
+
+/* Estilos específicos para el rango de precio */
+.price-slider {
+    width: 100%;
+    height: 4px; /* Más delgado */
+    margin: 10px 0;
+    /* Estilo del slider de rango, usar colores más oscuros */
+    background: var(--primary-color); 
+}
+
+.price-slider::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+}
+
+.price-range-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Tarjetas de productos */
+.products-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.product-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--text-dark);
+}
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 15px 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  font-size: 17px;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-add {
+ 
+  background: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: background 0.3s ease;
+}
+.btn-add:hover {
+  background: var(--accent-color);
+}
+
+.btn-add-cart {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.btn-icon {
+    flex: 1;
+    padding: 12px 0;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-icon:hover {
+    background-color: var(--gray-light);
+    color: var(--primary-color);
+}
+
+
+.btn-add-cart:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+.btn-add-cart:first-child {
+    border-right: 1px solid var(--border-color);
+    background-color: #ffffff; /* Asegurarse que el primer botón mantenga su estilo original si se cambia el segundo */
+    color: #666;
+}
+
+.btn-icon:first-child {
+    border-right: 1px solid var(--border-color);
+}
+
+.btn-icon.btn-add-cart:hover {
+    background-color: var(--accent-color); /* Color de hover para el botón de agregar al carrito */
+    color: #ffffff;
+}
+
+/* Botón de añadir al carrito más largo y con texto 'Añadir al carrito' */
+.product-card .card-actions .btn-add-cart {
+    flex: 2; /* Para que sea más grande */
+    font-size: 13px; /* Fuente más pequeña */
+}
+.product-card .card-actions .btn-icon:first-child {
+    flex: 1; /* El de vista rápida es más pequeño */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .products-layout {
+    flex-direction: column;
+  }
+  .sidebar-filters {
+        width: 100%;
+        position: static; 
+        max-height: none;
+        margin-bottom: 20px;
+  }
+}

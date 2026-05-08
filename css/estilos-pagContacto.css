@@ -1,0 +1,255 @@
+/* ================================================= */
+/* Estilos Específicos para la Página de Contacto    */
+/* Se basa en la imagen de referencia y la paleta de colores. */
+/* ================================================= */
+
+/* Variables de color ya definidas en estilos-pagPrincipal.css:
+   --primary-color: #2E4B67; (Azul Oscuro)
+   --accent-color: #5B84B1; (Azul Medio/Claro)
+   --text-color-dark: #333333;
+   --section-bg-light: #F8F9FA;
+*/
+
+/* --- HERO BANNER - CONTACTO --- */
+.contact-hero-banner {
+    /* Color de fondo similar al de la imagen (un azul verdoso) */
+    background-color: #386a7d; 
+    color: var(--text-color-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-hero-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color-light);
+}
+
+.contact-hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* --- SECCIÓN DE INFO DE CONTACTO (ICONOS) --- */
+.contact-info-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 20px;
+    gap: 30px;
+    border-bottom: 1px solid var(--border-color); /* Línea divisoria */
+}
+
+.info-card {
+    flex: 1;
+    text-align: center;
+}
+
+.info-card i {
+    /* Estilo del icono (círculo azul con borde) */
+    font-size: 24px;
+    color: var(--primary-color); 
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--text-color-light);
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* --- SECCIÓN PRINCIPAL: FORMULARIO + MAPA --- */
+.contact-main-layout {
+    display: flex;
+    gap: 50px;
+    padding: 60px 20px;
+    align-items: flex-start; /* Alinear el formulario y mapa arriba */
+}
+
+/* --- FORMULARIO DE CONTACTO (Izquierda) --- */
+.contact-form {
+    flex: 2; /* Ocupa más espacio que el mapa */
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color); 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Estilos para el grupo de radio buttons */
+.radio-group {
+    margin-bottom: 25px;
+}
+
+.radio-group > div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.radio-group label {
+    font-weight: 400; /* Menos negrita para las opciones */
+    display: inline;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.btn-primary-full {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary-full:hover {
+    background-color: #3b6080; /* Un poco más oscuro */
+}
+
+
+/* --- MAPA Y DATOS DE UBICACIÓN (Derecha) --- */
+.location-details {
+    flex: 1; /* Ocupa menos espacio */
+}
+
+.location-details h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 25px;
+}
+
+.map-container {
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden; /* Asegura que el iframe/imagen no se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.map-container iframe {
+    display: block; /* Elimina espacios debajo del iframe */
+}
+
+.transport-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.transport-info p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.transport-info p strong {
+    color: var(--text-color-dark);
+}
+
+/* --- Media Queries (Ajustes Responsivos) --- */
+@media (max-width: 992px) {
+    .contact-main-layout {
+        flex-direction: column; 
+        gap: 40px;
+    }
+    .contact-form, .location-details {
+        flex: none; /* Desactivar flex-grow */
+        width: 100%;
+    }
+    .contact-info-icons {
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        padding: 40px 20px;
+    }
+    .info-card {
+        flex: 1 1 45%; /* Dos columnas en tablets */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-hero-content h1 {
+        font-size: 32px;
+    }
+    .contact-info-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .info-card {
+        flex: 1 1 100%; /* Una columna en móviles */
+        max-width: 250px;
+    }
+    .radio-group > div {
+        display: block;
+        margin-right: 0;
+    }
+    .radio-group label {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}

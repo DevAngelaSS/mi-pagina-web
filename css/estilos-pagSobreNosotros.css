@@ -1,0 +1,288 @@
+/* ================================================= */
+/* Estilos Específicos para la Página Sobre Nosotros */
+/* Se basa en la imagen de referencia y la paleta de colores. */
+/* ================================================= */
+
+/* Variables de color ya definidas en estilos-pagPrincipal.css:
+   --primary-color: #2E4B67; (Azul Oscuro)
+   --accent-color: #5B84B1; (Azul Medio/Claro)
+   --text-color-light: #ffffff;
+*/
+
+/* --- HERO BANNER - CONOCE LA HISTORIA --- */
+.about-hero-banner {
+    /* La imagen de fondo es oscura con una silla en primer plano */
+    background-size: cover;
+    background-position: center 30%; 
+    padding: 120px 0; /* Espaciado generoso */
+    color: var(--text-color-light);
+    text-align: center;
+    /* Overlay oscuro para que el texto resalte (simulando el efecto de la imagen) */
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay para oscurecer la imagen y mantener el contraste */
+.about-hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45); /* Oscurecimiento */
+    z-index: -1;
+}
+
+.about-hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Botón outline (similar al de la imagen) */
+.btn-primary-outline {
+    background: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary-outline:hover {
+    background-color: var(--text-color-light);
+    color: var(--primary-color);
+}
+
+
+/* --- SECCIÓN NUESTRA HISTORIA --- */
+.our-history {
+    padding: 60px 0;
+}
+
+.history-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+}
+
+.history-image {
+    flex: 1;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Pequeño borde redondeado */
+}
+
+.history-text {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.history-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.history-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+}
+
+.history-text p strong {
+    font-weight: 700;
+    color: var(--primary-color); /* Para resaltar las palabras clave */
+}
+
+/* --- SECCIÓN NUESTRA ESENCIA (Misión, Visión, Valores) --- */
+.our-essence {
+    padding: 60px 0;
+    background-color: var(--section-bg-light); /* Fondo gris claro */
+    text-align: center;
+}
+
+.our-essence h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 40px;
+}
+
+.essence-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.essence-card {
+    flex: 1;
+    background-color: var(--text-color-light);
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    height: 100%; /* Asegura que todas tienen la misma altura si el texto varía */
+}
+
+.essence-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    /* Círculo de color azul claro alrededor del icono */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin-bottom: 20px;
+    border: 5px solid rgba(91, 132, 177, 0.2); /* Borde semi-transparente */
+}
+
+.icon-circle i {
+    font-size: 24px;
+    color: var(--text-color-light);
+}
+
+.essence-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.essence-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- SECCIÓN COMPROMISO --- */
+/* Usamos container-fluid para que el fondo azul ocupe todo el ancho */
+.commitment-section {
+    background-color: #A9DCEE; /* Tonalidad de azul clara de la imagen */
+    padding: 50px 0;
+}
+
+.commitment-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commitment-text {
+    flex: 1;
+}
+
+.commitment-text h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary-color); 
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.commitment-text p {
+    font-size: 16px;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+}
+
+.commitment-promises {
+    display: flex;
+    gap: 25px;
+}
+
+.promise-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.promise-item i {
+    color: var(--accent-color); 
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.commitment-image {
+    flex-shrink: 0; 
+    max-width: 450px; /* Tamaño fijo para la imagen de la derecha */
+    /* Crea el efecto de imagen cortada/asomándose */
+    position: relative;
+    top: 20px; 
+}
+
+.commitment-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Media Queries (Ajustes Responsivos) --- */
+@media (max-width: 992px) {
+    .history-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-text {
+        order: 2; /* Mueve el texto debajo de la imagen */
+    }
+    .history-image {
+        order: 1;
+        max-width: 80%;
+    }
+
+    .essence-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .commitment-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .commitment-text, .commitment-image {
+        max-width: 100%;
+    }
+    .commitment-image {
+        top: 0;
+        margin-top: 20px;
+    }
+    .commitment-promises {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 32px;
+    }
+    .our-history h2, .our-essence h2, .commitment-text h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,418 @@
+/* ================================================= */
+/* Estilos Específicos para la Página de Ofertas      */
+/* ================================================= */
+
+/* --- Banner de Ofertas (offers-hero-banner) --- */
+.offers-hero-banner {
+    /* Color de fondo oscuro de la imagen del banner */
+    background-color: #2e4b67; 
+    color: var(--text-color-light);
+    padding: 60px 0;
+    text-align: center;
+    /* Usamos el primary-color del base, pero un poco más oscuro o con un overlay si fuera necesario */
+    background-image: linear-gradient(rgba(33, 58, 82, 0.9), rgba(33, 58, 82, 0.9)); 
+    background-size: cover;
+    background-position: center;
+}
+
+.offers-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offers-hero-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color-light);
+}
+
+.offers-hero-content p {
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+
+/* --- Layout Principal (Filtros + Contenido) --- */
+.main-offers-layout {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px 60px;
+    align-items: flex-start; 
+}
+
+/* --- Barra Lateral de Filtros (ASIDE) --- */
+.sidebar-filters {
+    width: 250px; /* Ancho más estrecho */
+    flex-shrink: 0; 
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky; 
+    top: 20px; 
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: var(--primary-color);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 10px;
+}
+
+.checkbox-list, .radio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-list label, .radio-list label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-list input[type="checkbox"], 
+.radio-list input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--primary-color);
+}
+
+/* Estilos específicos para el rango de precio */
+.price-slider {
+    width: 100%;
+    height: 4px; /* Más delgado */
+    margin: 10px 0;
+    /* Estilo del slider de rango, usar colores más oscuros */
+    background: var(--primary-color); 
+}
+
+.price-slider::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+}
+
+.price-range-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #888;
+}
+
+/* --- Área de Contenido de Ofertas --- */
+.offers-content-area {
+    flex-grow: 1;
+}
+
+.offers-toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent; /* Sin fondo visible */
+    padding: 0;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+.tabs-navigation {
+    /* Estilo de "pestaña" (Envío Gratis, Ofertas Semanales, etc.) */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 15px; /* Separación entre pestañas */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tabs-navigation:last-child {
+    margin-right: 0;
+}
+
+.tabs-navigation span:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.tabs-navigation span:last-child {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.tabs-navigation .active {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.offers-grid {
+    display: grid;               /* Necesario para que funcione el grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 productos por fila */
+    gap: 25px;                   /* Ajusta si quieres más o menos separación */
+    width: 100%;
+}
+
+.product-card.offer-card {
+    position: relative;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Color de etiqueta de descuento azul oscuro, como en la imagen */
+    background-color: var(--primary-color); 
+    color: var(--text-color-light);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-card.offer-card .price {
+    display: flex;
+    flex-direction: row; /* Precio anterior y nuevo en línea */
+    align-items: baseline;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary-color); 
+    margin: 0 15px 15px;
+}
+
+.product-card.offer-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Botón de añadir al carrito más largo y con texto 'Añadir al carrito' */
+.product-card .card-actions .btn-add-cart {
+    flex: 2; /* Para que sea más grande */
+    font-size: 13px; /* Fuente más pequeña */
+}
+.product-card .card-actions .btn-icon:first-child {
+    flex: 1; /* El de vista rápida es más pequeño */
+}
+
+/* --- Sección de Promociones Especiales --- */
+.special-promotions {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--gray-light); /* Fondo para separarla visualmente */
+}
+
+.special-promotions h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--text-color-dark);
+}
+
+.promo-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.promo-card {
+    flex: 1;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    color: var(--text-color-light);
+    text-align: left;
+}
+
+.week-promo {
+    /* Color de la izquierda en la imagen */
+    background-color: #385E7C; 
+}
+
+.combo-promo {
+    /* Color de la derecha en la imagen */
+    background-color: #558CA6; 
+}
+
+.promo-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.promo-card p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.promo-card .btn-secondary {
+    /* Estilo del botón dentro de las promociones (blanco con borde) */
+    background-color: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.promo-card .btn-secondary:hover {
+    background-color: var(--text-color-light);
+    color: #385E7C; /* Cambia a un color oscuro al hacer hover */
+}
+
+/* --- Sección CTA Final (No dejes pasar...) --- */
+.cta-section {
+    background-color: var(--footer-bg); /* Mismo color del footer/header oscuro */
+    color: var(--text-color-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.newsletter-pretext {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #ffffff; /* Texto blanco para destacar */
+}
+
+.newsletter-action {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-action input[type="email"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 350px; 
+    max-width: 80%;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: var(--text-color-dark);
+}
+
+.newsletter-action .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.newsletter-action .btn-primary:hover {
+    background-color: #7AAFD8; 
+}
+
+
+/* --- Responsive Adjustments para la página de ofertas --- */
+@media (max-width: 1050px) {
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .main-offers-layout {
+        flex-direction: column; 
+    }
+    .sidebar-filters {
+        width: 100%;
+        position: static; 
+        max-height: none;
+        margin-bottom: 20px;
+    }
+    .offers-toolbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .tabs-navigation {
+        flex: 1 1 30%; /* Hace que las pestañas se organicen mejor */
+        margin-right: 0;
+    }
+    .promo-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .cta-content h2 {
+        font-size: 28px;
+    }
+    .promo-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs-navigation {
+        flex: 1 1 100%;
+    }
+    .newsletter-action {
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
