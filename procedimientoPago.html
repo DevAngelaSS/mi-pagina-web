@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Muebly</title>
+
+    <!-- Fuente Montserrat -->
+    <link rel="stylesheet" href="../css/estilos-PagPrincipal.css">
+    <link rel="stylesheet" href="../css/estilos-procedimientoPago.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">Muebly</div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../paginas/Index.html" class="active">Inicio</a></li>
+                <li><a href="../paginas/Categorias/categoria.html">Categoria</a></li>
+                <li><a href="../paginas/Servicios/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+                <li><a href="../paginas/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <i class="fas fa-user-circle"></i>
+            <span id="nombre-usuario" class="click-perfil"></span>
+        </div>
+    </div>
+</header>
+
+        <section class="carrito-section">
+        <div class="container carrito-container">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="left">
+
+                <div class="card">
+                    <h2>Opciones de Entrega</h2>
+
+                    <div class="form-group">
+                        <label>Región / Departamento</label>
+                        <select>
+                            <option>Lambayeque</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Provincia</label>
+                            <select id="provinciaSelect">
+                                <option value="Chiclayo" selected>Chiclayo</option>
+                                <option value="Ferreñafe">Ferreñafe</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Distrito</label>
+                            <select id="distritoSelect" required>
+                                <option value="">Seleccione un distrito</option>
+                                <option>Chiclayo</option>
+                                <option>Chiclayo Viejo</option>
+                                <option>José Leonardo Ortiz</option>
+                                <option>La Victoria</option>
+                                <option>Lambayeque</option>
+                                <option>Monsefú</option>
+                                <option>Pimentel</option>
+                                <option>Reque</option>
+                                <option>Santa Rosa</option>
+                                <option>Tumán</option>
+                                <option>Zaña</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dirección (Calle, Av, Girón)</label>
+                        <input type="text" id="direccion" required placeholder="Ej: Av. Luis Gonzales 863">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Referencia / Número</label>
+                        <input type="text" id="referencia" required placeholder="Ej: Frente al parque...">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Método de Pago</h2>
+
+                    <div class="payment-methods">
+
+                        <div class="payment-method active">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Tarjeta Interbank</span>
+                        </div>
+
+                        <div class="payment-method">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Tarjeta de Crédito / Débito</span>
+                        </div>
+
+                        <div class="payment-method">
+                            <i class="fas fa-wallet"></i>
+                            <span>Billetera Digital</span>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Número de Tarjeta</label>
+                        <input type="text" id="tarjeta" placeholder="0000 0000 0000 0000" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Fecha Exp.</label>
+                            <input type="text" id="fecha" placeholder="MM/AA" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="password" id="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones.</label>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn-secondary" id="btnVolver">Volver</button>
+                        <button class="btn-primary" id="btnFinalizar">Finalizar Compra</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLUMNA DERECHA -->
+            <div class="right">
+
+                <div class="summary-card">
+
+                    <h3>Resumen de la compra</h3>
+
+                    <div class="product">
+                        <span>Sofá Escandinavo Oslo</span>
+                        <span>S/ 1,480.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Productos</span>
+                        <span>S/ 1,480.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Envío</span>
+                        <span>S/ 50.00</span>
+                    </div>
+
+                    <div class="total">
+                        <span>Total</span>
+                        <span>S/ 1,530.00</span>
+                    </div>
+
+                    <div class="discount">
+                        <span class="tag">Con Tarjeta</span>
+                        <span>S/1,300.00</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-column contact-info">
+            <h3>Contacto</h3>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+                <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+                <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+                <li><i class="fas fa-clock"></i> Lunes - Viernes: 9:00 - 19:00</li>
+                <li><i class="fas fa-clock"></i> Sábado: 10:00 - 18:00</li>
+                <li><i class="fas fa-clock"></i> Domingo: 11:00 - 15:00</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Política de Devoluciones</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Guía de Medidas</a></li>
+                <li><a href="#">Blog de Decoración</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <p>Encuentra inspiración diaria y mantente al tanto de nuestras últimas novedades</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="../js/verificacionProcedimiento.js"></script>
+<script src="../js/UsuarioIndex.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebly - Ofertas Exclusivas en Muebles de Calidad</title>
+    
+    <link rel="stylesheet" href="../css/estilos-pagPrincipal.css"> 
+    <link rel="stylesheet" href="../css/estilos-pagOfertas.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Muebly</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+              <li><a href=".\Categorias\categoria.html">Categoria</a></li>
+                    <li><a href=".\Servicios\servicios.html">Servicios</a></li>
+                    <li><a href="ofertas.html" class="active">Ofertas</a></li> 
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+                <div class="header-icons">
+                    <i class="fas fa-user-circle"></i>
+                <span id="nombre-usuario" class="click-perfil"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="offers-hero-banner">
+            <div class="container offers-hero-content">
+                <h1>Ofertas Exclusivas en Muebles de Calidad</h1>
+                <p>Descubre nuestras promociones actuales y aprovecha descuentos únicos en muebles duraderos y con estilo. En Muebly, hacer que tu buen gusto vaya de la mano con los mejores precios.</p>
+            </div>
+        </section>
+
+        <section class="main-offers-layout container">
+            
+            <aside class="sidebar-filters">
+                <div class="filter-header">
+                    <h3>Filtros</h3>
+                    <button class="btn-link">Limpiar</button>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Categoría</h4>
+                    <div class="checkbox-list">
+                        <label><input type="checkbox" checked> Sofás y Sillones</label>
+                        <label><input type="checkbox"> Mesas de Comedor</label>
+                        <label><input type="checkbox"> Dormitorios</label>
+                        <label><input type="checkbox"> Sillas y Taburetes</label>
+                        <label><input type="checkbox"> Almacenamiento</label>
+                        <label><input type="checkbox"> Decoración</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Rango de precio</h4>
+                    <input type="range" min="0" max="2000" value="1000" class="price-slider">
+                    <div class="price-range-info">
+                        <span>S/ 0</span>
+                        <span>S/ 2000</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Porcentaje de descuento</h4>
+                    <div class="radio-list">
+                        <label><input type="radio" name="discount-range" checked> Todo</label>
+                        <label><input type="radio" name="discount-range"> +10%</label>
+                        <label><input type="radio" name="discount-range"> +20%</label>
+                        <label><input type="radio" name="discount-range"> +30%</label>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="offers-content-area">
+                
+                <div class="offers-toolbar">
+                    <div class="tabs-navigation">
+                        <span class="active">Envío Gratis</span>
+                        <span>Productos: 200</span>
+                    </div>
+                    <div class="tabs-navigation">
+                        <span>Ofertas Semanales</span>
+                        <span>Novedades cada lunes</span>
+                    </div>
+                    <div class="tabs-navigation">
+                        <span>Tiempo Limitado</span>
+                        <span>¡Aprovecha ya!</span>
+                    </div>
+                </div>
+            <div class="offers-grid">
+
+                <!-- ===================================== -->
+                <!-- Sofá Escandinavo Oslo (Sofás y Sillones) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="sofas-sillones"
+                    data-price="1480"
+                    data-discount="20">
+
+                    <span class="discount-badge">-20%</span>
+                    <img src="../img/ofertas/Oferta_Sofa.jpg" alt="Sofá Escandinavo Oslo">
+
+                    <h3>Sofá Escandinavo Oslo</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 1,850.00</span>
+                        <span class="new-price">S/ 1,480.00</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- Mesa de Comedor Extensible (Mesas de Comedor) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="mesas-de-comedor"
+                    data-price="841"
+                    data-discount="15">
+
+                    <span class="discount-badge">-15%</span>
+                    <img src="../img/ofertas/Ofertas_Mesa.jpg" alt="Mesa de Comedor Extensible">
+
+                    <h3>Mesa de Comedor Extensible</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 990.00</span>
+                        <span class="new-price">S/ 841.50</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- Set de Dormitorio Moderno (Dormitorios) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="dormitorios"
+                    data-price="875"
+                    data-discount="30">
+
+                    <span class="discount-badge">-30%</span>
+                    <img src="../img/ofertas/Oferta_DormitorioModerno.jpg" alt="Set de Dormitorio Moderno">
+
+                    <h3>Set de Dormitorio Moderno</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 1,250.00</span>
+                        <span class="new-price">S/ 875.00</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- Silla de Oficina Ergonómica (Sillas y Taburetes) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="sillas-taburetes"
+                    data-price="279"
+                    data-discount="20">
+
+                    <span class="discount-badge">-20%</span>
+                    <img src="../img/ofertas/Oferta_SillaErgonomica.jpg"  alt="Silla de Oficina Ergonómica">
+
+                    <h3>Silla de Oficina Ergonómica</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 349.00</span>
+                        <span class="new-price">S/ 279.20</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- Estantería Minimalista (Almacenamiento) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="almacenamiento"
+                    data-price="527"
+                    data-discount="20">
+
+                    <span class="discount-badge">-20%</span>
+                    <img src="../img/ofertas/Oferta_EstanteriaMinimalista.jpg" alt="Estantería Minimalista">
+
+                    <h3>Estantería Minimalista</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 659.00</span>
+                        <span class="new-price">S/ 527.20</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- Mesa de Centro Industrial (Decoración) -->
+                <!-- ===================================== -->
+                <div class="product-card offer-card"
+                    data-category="decoracion"
+                    data-price="639"
+                    data-discount="20">
+
+                    <span class="discount-badge">-20%</span>
+                    <img src="../img/ofertas/Oferta_MesaIndustrial.jpg" alt="Mesa de Centro Industrial">
+
+                    <h3>Mesa de Centro Industrial</h3>
+
+                    <div class="price">
+                        <span class="old-price">S/ 799.00</span>
+                        <span class="new-price">S/ 639.20</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-icon"><i class="fa fa-eye"></i> Vista rápida</button>
+                        <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Añadir al carrito</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="special-promotions">
+            <div class="container">
+                <h2>Promociones Especiales</h2>
+                <div class="promo-grid">
+                    <div class="promo-card week-promo">
+                        <h3>Semana del Descanso</h3>
+                        <p>Hasta 40% de descuento en toda nuestra colección de dormitorios.</p>
+                        <button class="btn btn-secondary">Ver promoción <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="promo-card combo-promo">
+                        <h3>Combos de Sala</h3>
+                        <p>Compra sofá + mesa de centro y obtén un puf completamente gratis.</p>
+                        <button class="btn btn-secondary">Ver promoción <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2>No dejes pasar estas oportunidades.<br>¡Renueva tu hogar hoy con Muebly!</h2>
+                <p>Descubre toda nuestra oferta y transforma tu espacio con estilo y calidad excepcional.</p>
+                <p class="newsletter-pretext">Recibe nuestras mejores ofertas antes que nadie</p>
+                <div class="newsletter-action">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </div>
+            </div>
+        </section>
+
+        </main>
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-column contact-info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+                    <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+                    <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+                    <li><i class="fas fa-clock"></i> Lunes - Viernes: 9:00 - 19:00</li>
+                    <li><i class="fas fa-clock"></i> Sábado: 10:00 - 18:00</li>
+                    <li><i class="fas fa-clock"></i> Domingo: 11:00 - 15:00</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Guía de Medidas</a></li>
+                    <li><a href="#">Blog de Decoración</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <p>Encuentra inspiración diaria y mantente al tanto de nuestras últimas novedades</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../js/Ofertas.js"></script>
+    <script src="../js/mensajeCarrito.js"></script>
+    <script src="../js/IndicaSesionRedirec.js"></script>
+    <script src="../js/usuarioIndex.js"></script>
+    <script src="../js/suscripcion.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muebly - Envío y Montaje a Domicilio</title>
+
+  <link rel="stylesheet" href="../../css/estilos-pagPrincipal.css" />
+  <link rel="stylesheet" href="../../css/estilos-pagEnvio.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <script>
+          window.esSubcarpeta = true;
+    </script>
+      
+  <script src="../../js/UsuarioIndex.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Muebly</div>
+      <nav class="nav-menu">
+         <ul>
+          <li><a href="../Index.html">Inicio</a></li>
+          <li><a href="../Categorias/categoria.html">Categorías</a></li>
+          <li><a href="../Servicios/servicios.html" class="active">Servicios</a></li>
+          <li><a href="../ofertas.html">Ofertas</a></li>
+          <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+                <i class="fas fa-user-circle"></i>
+                <span id="nombre-usuario" class="click-perfil"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="envio-hero">
+      <div class="container envio-hero-content">
+        <h1>Envío y Montaje a Domicilio</h1>
+        <p>Nos encargamos de que tus muebles lleguen seguros y queden listos para usar, sin complicaciones.</p>
+        <div class="envio-cta">
+          <a href="#solicitar" class="btn btn-primary"><i class="fas fa-truck"></i> Solicitar envío</a>
+          <a href="#tarifas" class="btn btn-secondary"><i class="fas fa-receipt"></i> Ver tarifas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="envio-pasos container">
+      <div class="paso">
+        <i class="fas fa-box-open" aria-hidden="true"></i>
+        <h3>1. Preparación del pedido</h3>
+        <p>Revisamos tu pedido y lo embalamos cuidadosamente para proteger cada pieza durante el traslado.</p>
+      </div>
+      <div class="paso">
+        <i class="fas fa-calendar-check" aria-hidden="true"></i>
+        <h3>2. Programación</h3>
+        <p>Coordinamos fecha y horario contigo para que la entrega se ajuste a tu disponibilidad.</p>
+      </div>
+      <div class="paso">
+        <i class="fas fa-truck" aria-hidden="true"></i>
+        <h3>3. Envío seguro</h3>
+        <p>Transportamos tus muebles con personal capacitado y unidades acondicionadas para muebles.</p>
+      </div>
+      <div class="paso">
+        <i class="fas fa-tools" aria-hidden="true"></i>
+        <h3>4. Montaje profesional</h3>
+        <p>Nuestro equipo ensambla y ubica los muebles en el ambiente que indiques, sin dejar residuos.</p>
+      </div>
+      <div class="paso">
+        <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+        <h3>5. Revisión final</h3>
+        <p>Verificamos estabilidad y funcionamiento; tú confirmas y recibes recomendaciones de cuidado.</p>
+      </div>
+    </section>
+
+    <section class="envio-beneficios container">
+      <h2>¿Por qué elegir nuestro servicio?</h2>
+      <div class="beneficios-grid">
+        <div class="beneficio">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Garantía en entrega</h4>
+          <p>Si ocurre un imprevisto, respondemos con reposición o reparación según política.</p>
+        </div>
+        <div class="beneficio">
+          <i class="fas fa-user-cog"></i>
+          <h4>Equipo especializado</h4>
+          <p>Técnicos con experiencia en armado y manipulación de mobiliario.</p>
+        </div>
+        <div class="beneficio">
+          <i class="fas fa-clock"></i>
+          <h4>Horario flexible</h4>
+          <p>Ventanas de entrega para mañana o tarde, según disponibilidad en tu zona.</p>
+        </div>
+        <div class="beneficio">
+          <i class="fas fa-map-marked-alt"></i>
+          <h4>Cobertura local</h4>
+          <p>Servicio disponible en Chiclayo y zonas cercanas. Consulta si tu distrito aplica.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="tarifas" class="envio-tarifas container">
+      <h2>Tarifas y alcance</h2>
+      <p>Las tarifas pueden variar según volumen, distancia y complejidad del montaje.</p>
+      <ul class="tarifas-list">
+        <li><strong>Local:</strong> Desde S/ 25 (entrega) + S/ 35 (montaje básico).</li>
+        <li><strong>Periferia:</strong> Desde S/ 40 (entrega) + S/ 50 (montaje básico).</li>
+        <li><strong>Armado avanzado:</strong> Cotización según modelo y piezas.</li>
+      </ul>
+      <p class="nota">Nota: Precios referenciales sujetos a confirmación al finalizar tu compra.</p>
+    </section>
+
+    <section id="solicitar" class="envio-solicitud container">
+      <h2>Solicitar envío y montaje</h2>
+      <form class="solicitud-form">
+        <div class="form-row">
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="tel" placeholder="Teléfono" required />
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="text" placeholder="Distrito / Ciudad" required />
+        </div>
+        <div class="form-row">
+          <textarea placeholder="Detalles del pedido (modelo, cantidad, observaciones)" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-column contact-info">
+        <h3>Contacto</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+          <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+          <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+          <li><i class="fas fa-clock"></i> Lunes - Viernes: 9:00 - 19:00</li>
+          <li><i class="fas fa-clock"></i> Sábado: 10:00 - 18:00</li>
+          <li><i class="fas fa-clock"></i> Domingo: 11:00 - 15:00</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="#">Políticas de Privacidad</a></li>
+          <li><a href="#">Política de Devoluciones</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Guía de Medidas</a></li>
+          <li><a href="#">Blog de Decoración</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <p>Encuentra inspiración diaria y mantente al tanto de nuestras últimas novedades</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+    <script src="../../js/envio.js"></script>  
+    <script src="../js/IndicaSesionRedirec.js"></script>         
+</body>
+</html>

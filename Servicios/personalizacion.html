@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muebly - Personalización de muebles</title>
+
+  <link rel="stylesheet" href="../../css/estilos-pagPrincipal.css"/>
+  <link rel="stylesheet" href="../../css/estilos-pagPersonalizacion.css"/>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <script>
+          window.esSubcarpeta = true;
+    </script>
+      
+    <script src="../../js/UsuarioIndex.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Muebly</div>
+      <nav class="nav-menu">
+         <ul>
+          <li><a href="../Index.html">Inicio</a></li>
+          <li><a href="../Categorias/categoria.html">Categorías</a></li>
+          <li><a href="../Servicios/servicios.html" class="active">Servicios</a></li>
+          <li><a href="../ofertas.html">Ofertas</a></li>
+          <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+       <div class="header-icons">
+                <i class="fas fa-user-circle"></i>
+                <span id="nombre-usuario" class="click-perfil"></span>
+        </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="personalizacion-hero">
+      <div class="container hero-content">
+        <h1>Personaliza tus muebles con Muebly</h1>
+        <p>Adapta cada pieza a tu estilo y espacio: colores, materiales, medidas y módulos a tu medida.</p>
+        <div class="hero-cta">
+          <a href="#simulador" class="btn btn-primary"><i class="fas fa-sliders"></i> Probar simulador</a>
+          <a href="#solicitud" class="btn btn-secondary"><i class="fas fa-envelope-open-text"></i> Enviar idea</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="personalizacion-galeria container">
+      <h2>Ejemplos de personalización</h2>
+      <p>Explora cómo el mismo modelo puede transformarse según el acabado, el color y la configuración.</p>
+
+      <div class="galeria-grid">
+        <article class="mueble-card">
+          <img src="../../img/servicios/personalizacion/sofaPersonalizacion.jpg" alt="Sofá en colores personalizados"/>
+          <div class="card-body">
+            <h3>Sofá personalizado</h3>
+            <p>12 colores, 4 tipos de tela, patas en madera o metal.</p>
+            <div class="tags">
+              <span><i class="fas fa-palette"></i> Color</span>
+              <span><i class="fas fa-ruler-combined"></i> Medidas</span>
+              <span><i class="fas fa-couch"></i> Módulos</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="mueble-card">
+          <img src="../../img/servicios/personalizacion/mesaModular.jpg" alt="Mesa modular configurable"/>
+          <div class="card-body">
+            <h3>Mesa modular</h3>
+            <p>Tableros intercambiables y extensiones para varios comensales.</p>
+            <div class="tags">
+              <span><i class="fas fa-th"></i> Módulos</span>
+              <span><i class="fas fa-ellipsis-h"></i> Extensiones</span>
+              <span><i class="fas fa-warehouse"></i> Acabados</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="mueble-card">
+          <img src="../../img/servicios/personalizacion/closetPersonalizacion.jpg" alt="Closet ajustable a medida"/>
+          <div class="card-body">
+            <h3>Closet ajustable</h3>
+            <p>Altura, puertas y distribución interna según tus espacios.</p>
+            <div class="tags">
+              <span><i class="fas fa-ruler-vertical"></i> Altura</span>
+              <span><i class="fas fa-door-closed"></i> Puertas</span>
+              <span><i class="fas fa-draw-polygon"></i> Interiores</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="simulador" class="simulador container">
+      <h2>Simulador de estilo</h2>
+      <p>Selecciona un estilo y un acabado. Te mostraremos una vista representativa del diseño.</p>
+
+      <div class="simulador-panel">
+        <div class="simulador-opciones">
+          <h3><i class="fas fa-paint-roller"></i> Estilos</h3>
+          <div class="chip-group">
+            <button class="chip">Moderno</button>
+            <button class="chip">Minimalista</button>
+            <button class="chip">Rústico</button>
+            <button class="chip">Escandinavo</button>
+          </div>
+
+          <h3><i class="fas fa-fill-drip"></i> Acabados</h3>
+          <div class="chip-group">
+            <button class="chip">Madera clara</button>
+            <button class="chip">Nogal</button>
+            <button class="chip">Negro mate</button>
+            <button class="chip">Blanco satinado</button>
+          </div>
+
+          <h3><i class="fas fa-ruler"></i> Medidas</h3>
+          <div class="medidas-group">
+            <label>Ancho
+              <input type="number" min="60" max="300" value="180"/> cm
+            </label>
+            <label>Alto
+              <input type="number" min="40" max="250" value="90"/> cm
+            </label>
+            <label>Profundidad
+              <input type="number" min="30" max="100" value="45"/> cm
+            </label>
+          </div>
+        </div>
+
+        <div class="simulador-vista">
+          <div class="vista-placeholder">
+            <i class="fas fa-couch"></i>
+            <p>Vista previa simulada del mueble según opciones seleccionadas.</p>
+          </div>
+          <div class="simulador-acciones">
+            <button class="btn btn-primary"><i class="fas fa-eye"></i> Actualizar vista</button>
+            <button class="btn btn-secondary"><i class="fas fa-download"></i> Guardar configuración</button>
+          </div>
+        </div>
+      </div>
+      <p class="nota">Nota: El simulador es representativo y no interactivo en esta versión académica.</p>
+    </section>
+
+
+    <section class="beneficios container">
+      <h2>¿Por qué personalizar con Muebly?</h2>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <i class="fas fa-check-circle"></i>
+          <h4>Ajuste perfecto</h4>
+          <p>Optimiza cada centímetro de tu espacio con medidas a tu alcance.</p>
+        </div>
+        <div class="beneficio-card">
+          <i class="fas fa-star"></i>
+          <h4>Estilo propio</h4>
+          <p>Combina colores y materiales para lograr el look que te representa.</p>
+        </div>
+        <div class="beneficio-card">
+          <i class="fas fa-toolbox"></i>
+          <h4>Funcionalidad</h4>
+          <p>Configura módulos y accesorios para tus rutinas y hábitos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solicitud" class="formulario-personalizacion container">
+      <h2>Solicita tu diseño personalizado</h2>
+      <form class="form-grid">
+        <input type="text" placeholder="Nombre completo" required/>
+        <input type="email" placeholder="Correo electrónico" required/>
+        <input type="text" placeholder="Distrito / Ciudad" required/>
+        <textarea placeholder="Describe tu idea (modelo, acabados, medidas, uso)" rows="4"></textarea>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar solicitud</button>
+      </form>
+      <p class="nota">Nos pondremos en contacto para asesorarte y preparar una propuesta visual.</p>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-column contact-info">
+        <h3>Contacto</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+          <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+          <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+          <li><i class="fas fa-clock"></i> Lunes - Viernes: 9:00 - 19:00</li>
+          <li><i class="fas fa-clock"></i> Sábado: 10:00 - 18:00</li>
+          <li><i class="fas fa-clock"></i> Domingo: 11:00 - 15:00</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="#">Políticas de Privacidad</a></li>
+          <li><a href="#">Política de Devoluciones</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Guía de Medidas</a></li>
+          <li><a href="#">Blog de Decoración</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <p>Inspiración diaria y novedades de colecciones</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+    <script src="../js/IndicaSesionRedirec.js"></script>   
+</body>
+</html>

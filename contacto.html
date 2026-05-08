@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebly - Contacto</title>
+    
+    <link rel="stylesheet" href="../css/estilos-pagPrincipal.css"> 
+    <link rel="stylesheet" href="../css/estilos-pagContacto.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Muebly</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="../paginas/Categorias/categoria.html">Categoria</a></li>
+                    <li><a href="../paginas/Servicios/servicios.html">Servicios</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li> 
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li> 
+                    <li><a href="contacto.html" class="active">Contacto</a></li> 
+                </ul>
+            </nav>
+                <div class="header-icons">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="nombre-usuario" class="click-perfil"></span>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="contact-hero-banner">
+            <div class="container contact-hero-content">
+                <h1>Contacto</h1>
+                <p>Estamos aquí para ayudarte a encontrar los muebles perfectos para tu hogar.</p>
+            </div>
+        </section>
+
+        <section class="contact-info-icons container">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Dirección</h3>
+                <p>Av. Grau 395, Chiclayo 14001/p>
+                <p>Chiclayo - Perú </p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Teléfono</h3>
+                <p>+51 123 456 789</p>
+                <p>&nbsp;</p> </div>
+            
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@muebly.com</p>
+                <p>&nbsp;</p> </div>
+
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horario</h3>
+                <p>Lun - Vie: 9:00 - 20:00</p>
+                <p>Sáb: 10:00 - 14:00</p>
+            </div>
+        </section>
+
+        <section class="contact-main-layout container">
+            
+            <form class="contact-form">
+                
+                <h2>Información personal</h2>
+                <div class="form-group">
+                    <label for="full-name">Nombre completo</label>
+                    <input type="text" id="full-name" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" placeholder="+34 123 456 789">
+                </div>
+
+                <h2>Información del proyecto</h2>
+                <div class="form-group">
+                    <label for="interest">¿Qué muebles te interesan?</label>
+                    <select id="interest">
+                        <option disabled selected>Selecciona una opción</option>
+                        <option>Sofás y Sillones</option>
+                        <option>Mesas de Comedor</option>
+                        <option>Dormitorios</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group radio-group">
+                    <label>Método de contacto preferido</label>
+                    <div>
+                        <input type="radio" id="email-pref" name="contact-pref" checked>
+                        <label for="email-pref">Correo electrónico</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="phone-pref" name="contact-pref">
+                        <label for="phone-pref">Teléfono</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="whatsapp-pref" name="contact-pref">
+                        <label for="whatsapp-pref">Whatsapp</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje adicional</label>
+                    <textarea id="message" rows="5" placeholder="Ingrese las necesidades que desea consultar."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary-full">Enviar solicitud</button>
+
+            </form>
+
+            <div class="location-details">
+                <h2>Encuéntranos fácilmente</h2>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31695.348541844647!2d-79.8825877256836!3d-6.779765099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef26f9fbb059%3A0xd5d054d4f4373d4e!2sDon%20Mueble!5e0!3m2!1ses-419!2spe!4v1760432542224!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-column contact-info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+                    <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+                    <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+                    <li><i class="fas fa-clock"></i> Lunes - Viernes: 9:00 - 19:00</li>
+                    <li><i class="fas fa-clock"></i> Sábado: 10:00 - 18:00</li>
+                    <li><i class="fas fa-clock"></i> Domingo: 11:00 - 15:00</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Guía de Medidas</a></li>
+                    <li><a href="#">Blog de Decoración</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <p>Encuentra inspiración diaria y mantente al tanto de nuestras últimas novedades</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../js/contacto.js"></script>
+    <script src="../js/IndicaSesionRedirec.js"></script>
+    <script src="../js/usuarioIndex.js"></script>
+</body>
+</html>

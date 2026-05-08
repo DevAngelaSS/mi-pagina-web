@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebly - Asesoramiento Personalizado</title>
+
+    <link rel="stylesheet" href="../../css/estilos-pagPrincipal.css"> 
+    <link rel="stylesheet" href="../../css/estilos-pagAsesoramiento.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        window.esSubcarpeta = true;
+    </script>
+    
+    <script src="../../js/UsuarioIndex.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Muebly</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../Index.html">Inicio</a></li>
+                    <li><a href="../Categorias/categoria.html">Categoría</a></li>
+                    <li><a href="../Servicios/servicios.html" class="active">Servicios</a></li>
+                    <li><a href="../ofertas.html">Ofertas</a></li>
+                    <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <i class="fas fa-user-circle"></i>
+                <span id="nombre-usuario" class="click-perfil"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-servicio asesoramiento-hero">
+            <div class="container">
+                <h1>Asesoramiento Personalizado</h1>
+                <p>Te ayudamos a crear espacios únicos, equilibrando estilo, comodidad y funcionalidad.</p>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="servicio-info container">
+            <div class="servicio-texto">
+                <h2>Diseña tu espacio con la ayuda de nuestros expertos</h2>
+                <p>En Muebly creemos que cada hogar cuenta una historia. Nuestro servicio de asesoramiento personalizado te acompaña en todo el proceso de elección y diseño, ayudándote a encontrar el mobiliario perfecto para tus necesidades.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Recomendaciones de estilo y combinación de colores</li>
+                    <li><i class="fas fa-check-circle"></i> Planificación de espacios según medidas reales</li>
+                    <li><i class="fas fa-check-circle"></i> Simulaciones digitales de tu ambiente</li>
+                    <li><i class="fas fa-check-circle"></i> Acompañamiento en compras</li>
+                </ul>
+            </div>
+            <div class="servicio-imagen">
+                <img src="../../img/servicios/asesoramiento.jpg" alt="Asesoramiento en diseño de interiores">
+            </div>
+        </section>
+
+        <!-- ETAPAS -->
+        <section class="etapas-servicio">
+            <div class="container">
+                <h2>¿Cómo funciona nuestro servicio?</h2>
+                <div class="etapas-grid">
+                    <div class="etapa-card">
+                        <i class="fas fa-laptop-house"></i>
+                        <h3>1. Consulta virtual o presencial</h3>
+                        <p>Cuéntanos sobre tu espacio, estilo y presupuesto.</p>
+                    </div>
+                    <div class="etapa-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>2. Propuesta personalizada</h3>
+                        <p>Nuestros diseñadores crean una propuesta adaptada a tus necesidades.</p>
+                    </div>
+                    <div class="etapa-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>3. Selección del mobiliario</h3>
+                        <p>Elige entre una variedad de estilos, materiales y colores.</p>
+                    </div>
+                    <div class="etapa-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>4. Entrega e instalación</h3>
+                        <p>Nos aseguramos de que todo quede perfecto en tu hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2>¿Listo para transformar tu espacio?</h2>
+                <p>Solicita tu asesoramiento personalizado y empieza a crear el hogar de tus sueños.</p>
+                <a href="../../paginas/contacto.html" class="btn btn-primary">Agendar Asesoría</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-column contact-info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Luis Gonzales 942 Chiclayo 140</li>
+                    <li><i class="fas fa-phone-alt"></i> +51 987 654 321</li>
+                    <li><i class="fas fa-envelope"></i> contacto@muebly.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Muebly. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/RedirigirContacto.js"></script>
+    <script src="../js/IndicaSesionRedirec.js"></script>        
+</body>
+</html>
